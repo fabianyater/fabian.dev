@@ -1,95 +1,57 @@
-import Image from 'next/image'
+import Header from '@/app/components/Header'
 import styles from './page.module.css'
+import picture from '../assets/fabian.jpg'
+import Image from "next/image";
+import {projects, socialLinks, workExperiences} from "@/app/utils";
+import Pill from "@/app/components/Pill";
+import Section from "@/app/components/Section";
+import {CodeIcon, SuiteCaseIcon} from "@/assets/icons";
+import Timeline from "@/app/components/Timeline";
+import Card from "@/app/components/Card";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <>
+      <div
+        className={styles.bg}>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+      <Header/>
+      <main className={styles.main}>
+        <section id="sobremi" className={styles.aboutSection}>
+          <header>
+            <Image className={styles.image} src={picture} alt="Foto de Fabian Yate"/>
+            <h1 className={styles.name}>Hola, soy Fabian Yate</h1>
+          </header>
+          <p className={styles.description}>
+            <span>Desarrollador Full-Stack</span> con +2 años de experiencia. Habilidades en <span>HTML, CSS, JavaScript y
+            React</span> para el
+            front-end, y <span>Java con Spring Boot</span> para el back-end.
+            Conocimientos en bases de datos y API
+            RESTful, enfocado
+            en crear soluciones efectivas para aplicaciones web dinámicas.
           </p>
-        </a>
-      </div>
-    </main>
+          <div className={styles.socialLinksContainer}>
+            {
+              socialLinks.map((socialLink, index) => (
+                <Pill key={index} title={socialLink.name} url={socialLink.url}>
+                  <socialLink.Icon/>
+                </Pill>
+              ))
+            }
+          </div>
+        </section>
+
+        <Section id="experiencia" title="Experiencia Laboral" icon={<SuiteCaseIcon/>}>
+          <Timeline items={workExperiences}/>
+        </Section>
+
+        <Section id="proyectos" title="Proyectos" icon={<CodeIcon/>}>
+          <div className={styles.bemto}>
+            <Card project={projects[0]}/>
+          </div>
+        </Section>
+
+      </main>
+    </>
   )
 }

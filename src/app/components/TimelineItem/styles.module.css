@@ -1,0 +1,39 @@
+.listItem {
+    margin-bottom: 2.5rem;
+    margin-inline-start: 1rem;
+}
+
+.listItem > div {
+    position: absolute;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: rgb(115, 162, 243);
+    border-radius: 9999px;
+    margin-top: 0.375rem;
+    inset-inline-start: -0.375rem;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.listItem time {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: rgb(115, 162, 243);
+}
+
+.listItem h3 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    color: #f1dd4a;
+}
+
+.listItem p {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: rgb(195, 196, 199);
+}

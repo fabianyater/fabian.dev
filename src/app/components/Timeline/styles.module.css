@@ -1,0 +1,8 @@
+.list {
+    position: relative;
+    list-style: none;
+    border-inline-start-style: solid;
+    border-inline-start-width: 1px;
+    border-color: rgba(55, 65, 81, 1);
+    margin-left: 10px;
+}

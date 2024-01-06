@@ -1,0 +1,16 @@
+.link {
+    text-decoration: none;
+    color: #a7a5a5;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all ease-out 0.3s;
+}
+
+.link:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all ease-in 0.3s;
+}

@@ -1,0 +1,71 @@
+.cardContainer {
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    width: 220px;
+    height: 220px;
+    box-shadow: 0 6px 12px rgba(241, 221, 74, 0.5); /* Adjusted shadow */
+
+}
+
+.tools {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.tools svg {
+    transition: transform 0.3s ease;
+}
+
+.tools svg:hover {
+    transform: scale(1.1);
+}
+
+.tools svg,
+.footer svg {
+    width: 26px;
+    height: 26px;
+    filter: invert();
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    text-align: left;
+}
+
+.body h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #000;
+    width: 100%;
+}
+
+.body p {
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: #000;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer a {
+    color: #fff;
+}

@@ -1,0 +1,26 @@
+.socialLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: .5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 9999px;
+    background-color: #ffffff3d;
+    color: #ffffff90;
+    text-decoration: none;
+
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms
+}
+
+.socialLink svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.socialLink:hover {
+    color: #ffffff;
+    transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1.1) scaleY(1.1);
+}
