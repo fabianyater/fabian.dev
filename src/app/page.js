@@ -52,7 +52,7 @@ export default function Home() {
           <div className={styles.bemto}>
             {
               projects.map((project, index) => (
-                <Card project={project}/>
+                <Card key={index} project={project}/>
               ))
             }
           </div>
@@ -65,8 +65,8 @@ export default function Home() {
             <div className={styles.skillsAnimate} data-reverse={false}>
               {
                 skills.map((skill, index) => (
-                  <div className={styles.skills}>
-                    <skill.Icon key={index}/>
+                  <div key={index} className={styles.skills}>
+                    <skill.Icon />
                     <p>{skill.name}</p>
                   </div>
                 ))
@@ -75,8 +75,8 @@ export default function Home() {
             <div className={styles.skillsAnimate} data-reverse={true}>
               {
                 skills.map((skill, index) => (
-                  <div className={styles.skills}>
-                    <skill.Icon key={index}/>
+                  <div key={index} className={styles.skills}>
+                    <skill.Icon />
                     <p>{skill.name}</p>
                   </div>
                 ))
