@@ -47,8 +47,14 @@ export default function Home() {
 
         <Section id="proyectos" title="Proyectos" icon={<CodeIcon/>}>
           <div className={styles.bemto}>
-            <Card project={projects[0]}/>
+            {
+              projects.map((project, index) => (
+                <Card project={project}/>
+              ))
+            }
           </div>
+          <a className={styles.link} href="https://github.com/fabianyater?tab=repositories" target="_blank"
+             style={{width: '120px', margin: '0 auto', marginTop: '40px'}}>Ver más</a>
         </Section>
 
       </main>

@@ -2,10 +2,10 @@ import {
   CodeIcon,
   CSSIcon, DockerIcon,
   GitHubIcon,
-  HtmlIcon, JavaIcon, JavaScriptIcon,
+  HtmlIcon, JavaIcon, JavaScriptIcon, JwtIcon,
   LinkedInIcon,
   NextJsIcon,
-  ReactIcon, SpringIcon,
+  ReactIcon, ReactQueryIcon, SpringIcon,
   TailwindIcon
 } from "@/assets/icons";
 
@@ -71,6 +71,43 @@ export const workExperiences = [
 
 export const projects = [
   {
+    title: 'Cámara',
+    description: 'Cámara web versátil: grabación, captura automática, múltiples funciones.',
+    tools: [
+      {
+        name: 'ReactJs',
+        Icon: ReactIcon
+      },
+      {
+        name: 'CSS',
+        Icon: CSSIcon
+      },
+      {
+        name: 'HTML',
+        Icon: HtmlIcon
+      },
+      {
+        name: 'JavaScript',
+        Icon: JavaScriptIcon
+      }
+    ],
+    links: [
+      {
+        name: "Código",
+        Icon: GitHubIcon,
+        url: "https://github.com/fabianyater/webcam",
+        title: 'Ver código'
+      },
+      {
+        name: "Ver",
+        Icon: CodeIcon,
+        url: "https://homemade-webcamera.vercel.app/",
+        title: 'Ver despliegue'
+      },
+    ],
+    cardColor: "#989dcc"
+  },
+  {
     title: "Linktree Clone",
     description: "Un clon del popular sitio web linktree.",
     tools: [
@@ -105,6 +142,195 @@ export const projects = [
         title: 'Ver despliegue'
       },
     ],
-    cardColor: "#d5d116"
+    cardColor: "#119673"
+  },
+  {
+    title: 'Aplicación del clima',
+    description: 'Aplicación del clima para la Hackaton de @midudev',
+    tools: [
+      {
+        name: 'ReactJs',
+        Icon: ReactIcon
+      },
+      {
+        name: 'CSS',
+        Icon: CSSIcon
+      },
+      {
+        name: 'HTML',
+        Icon: HtmlIcon
+      },
+      {
+        name: 'JavaScript',
+        Icon: JavaScriptIcon
+      }
+    ],
+    links: [
+      {
+        name: "Código",
+        Icon: GitHubIcon,
+        url: "https://github.com/fabianyater/hackaton-weather-app",
+        title: 'Ver código'
+      },
+      {
+        name: "Ver",
+        Icon: CodeIcon,
+        url: "https://fyrdev-weatherapp.netlify.app/",
+        title: 'Ver despliegue'
+      },
+    ],
+    cardColor: "#318bf3"
+  },
+  {
+    title: 'Temporizador',
+    description: 'Aplicación para crear recordatorios',
+    tools: [
+      {
+        name: 'ReactJs',
+        Icon: ReactIcon
+      },
+      {
+        name: 'Tailwind',
+        Icon: TailwindIcon
+      },
+      {
+        name: 'HTML',
+        Icon: HtmlIcon
+      },
+      {
+        name: 'JavaScript',
+        Icon: JavaScriptIcon
+      }
+    ],
+    links: [
+      {
+        name: "Código",
+        Icon: GitHubIcon,
+        url: "https://github.com/fabianyater/countdown-app",
+        title: 'Ver código'
+      },
+      {
+        name: "Ver",
+        Icon: CodeIcon,
+        url: "https://countdown-app-five.vercel.app/",
+        title: 'Ver despliegue'
+      },
+    ],
+    cardColor: "#4f4fe5"
+  },
+  {
+    title: 'Compresor de imágenes',
+    description: 'Aplicación para reducir tamaño de imágenes',
+    tools: [
+      {
+        name: 'ReactJs',
+        Icon: ReactIcon
+      },
+      {
+        name: 'CSS',
+        Icon: CSSIcon
+      },
+      {
+        name: 'HTML',
+        Icon: HtmlIcon
+      },
+      {
+        name: 'JavaScript',
+        Icon: JavaScriptIcon
+      }
+    ],
+    links: [
+      {
+        name: "Código",
+        Icon: GitHubIcon,
+        url: "https://github.com/fabianyater/basic-image-compressor",
+        title: 'Ver código'
+      },
+      {
+        name: "Ver",
+        Icon: CodeIcon,
+        url: "https://reduceimage.netlify.app/",
+        title: 'Ver despliegue'
+      },
+    ],
+    cardColor: "#a7a5a5"
+  },
+  {
+    title: 'My Wallet | Frontend',
+    description: 'Administrar ingresos y gastos',
+    tools: [
+      {
+        name: 'ReactJs',
+        Icon: ReactIcon
+      },
+      {
+        name: 'CSS',
+        Icon: CSSIcon
+      },
+      {
+        name: 'HTML',
+        Icon: HtmlIcon
+      },
+      {
+        name: 'JavaScript',
+        Icon: JavaScriptIcon
+      },
+      {
+        name: 'React Query',
+        Icon: ReactQueryIcon
+      }
+    ],
+    links: [
+      {
+        name: "Código",
+        Icon: GitHubIcon,
+        url: "https://github.com/fabianyater/wallet-web",
+        title: 'Ver código'
+      },
+      {
+        name: "Ver",
+        Icon: CodeIcon,
+        url: null,
+        title: 'Ver despliegue'
+      },
+    ],
+    cardColor: "#0BD08A"
+  },
+  {
+    title: 'My Wallet | Backend',
+    description: 'Administrar ingresos y gastos',
+    tools: [
+      {
+        name: 'Java',
+        Icon: JavaIcon
+      },
+      {
+        name: 'Spring boot',
+        Icon: SpringIcon
+      },
+      {
+        name: 'Docker',
+        Icon: DockerIcon
+      },
+      {
+        name: 'Jwt',
+        Icon: JwtIcon
+      }
+    ],
+    links: [
+      {
+        name: "Código",
+        Icon: GitHubIcon,
+        url: "https://github.com/fabianyater/wallet-mono",
+        title: 'Ver código'
+      },
+      {
+        name: "Ver",
+        Icon: CodeIcon,
+        url: null,
+        title: 'Ver despliegue'
+      },
+    ],
+    cardColor: "#ab2461"
   },
 ]

@@ -36,4 +36,5 @@
     line-height: 1.5rem;
     font-weight: 400;
     color: rgb(195, 196, 199);
+    text-wrap: balance;
 }

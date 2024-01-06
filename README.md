@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Desarrollador Full Stack
 
-## Getting Started
+Hola, soy Fabian Yate, un apasionado desarrollador Full Stack con experiencia en Java, Spring Boot, SQL, React,
+JavaScript, HTML, CSS y más.
 
-First, run the development server:
+### Sobre Mí
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Soy un desarrollador web apasionado por crear soluciones innovadoras que mejoran la experiencia del usuario. Con
+experiencia en tecnologías modernas y una mentalidad de solución de problemas, me esfuerzo por crear aplicaciones web
+intuitivas y altamente eficientes. Siempre estoy buscando desafíos nuevos y oportunidades para seguir creciendo y
+aprendiendo en el campo de la tecnología. Mi objetivo es contribuir con mi experiencia y habilidades para ayudar a las
+empresas a alcanzar sus metas.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Habilidades Técnicas
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Lenguajes de Programación:** Java, JavaScript
+- **Frontend:** React, HTML5, CSS3
+- **Backend:** Spring Boot
+- **Bases de Datos:** SQL
+- **Herramientas y Otros:** Git, herramientas de desarrollo de software, metodologías ágiles, etc.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Contacto
 
-## Learn More
+- **Email:** fabianyr.dev@gmail.com
+- **LinkedIn:** [fabianyr](https://www.linkedin.com/in/fabianyr)
+- **GitHub:** [fabianyater](https://www.github.com/fabianyater)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
