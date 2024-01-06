@@ -6,9 +6,13 @@
     height: 60px;
     padding: 10px 25px;
     border-radius: 10px;
-    background: #100D0D;
+    background: #100D0D7F;
     max-width: 720px;
     margin: 20px auto 0;
+    position: sticky;
+    top: 20px;
+    z-index: 2;
+    backdrop-filter: blur(20px);
 }
 
 .nav {
@@ -59,12 +63,12 @@
     flex-direction: column;
     gap: 40px;
     position: absolute;
-    top: calc(60px + 20px);
-    left: 10px;
-    right: 10px;
-    border-radius: 10px;
-    background: #100D0D;
-    padding: 20px 45px;
+    top: 55px;
+    left: 0px;
+    right: 0px;
+    border-radius: 0 0 10px 10px;
+    background: #100D0D;;
+    padding: 20px 0;
 }
 
 @media (max-width: 780px) {
@@ -72,7 +76,9 @@
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        background-color: transparent;
+        padding: 0 20px;
+        margin: 0;
+        top: 0;
     }
     .burger {
         display: flex;

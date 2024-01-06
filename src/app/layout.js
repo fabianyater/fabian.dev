@@ -1,7 +1,7 @@
 import {Poppins} from 'next/font/google'
 import './globals.css'
 
-const poppins = Poppins({subsets: ['latin'], weight: ["500", "600", "700"]})
+const poppins = Poppins({subsets: ['latin'], weight: ["200", "300", "500", "600", "700"]})
 
 export const metadata = {
   title: 'Portafolio | Fabian Yate Ramirez',

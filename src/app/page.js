@@ -1,13 +1,16 @@
+'use client'
+
 import Header from '@/app/components/Header'
 import styles from './page.module.css'
 import picture from '../assets/fabian.jpg'
 import Image from "next/image";
-import {projects, socialLinks, workExperiences} from "@/app/utils";
+import {projects, skills, socialLinks, workExperiences} from "@/app/utils";
 import Pill from "@/app/components/Pill";
 import Section from "@/app/components/Section";
-import {CodeIcon, SuiteCaseIcon} from "@/assets/icons";
+import {CodeIcon, ContactIcon, SkillsIcon, SuiteCaseIcon} from "@/assets/icons";
 import Timeline from "@/app/components/Timeline";
 import Card from "@/app/components/Card";
+import Input from "@/app/components/Input";
 
 export default function Home() {
   return (
@@ -57,7 +60,55 @@ export default function Home() {
              style={{width: '120px', margin: '0 auto', marginTop: '40px'}}>Ver más</a>
         </Section>
 
+        <Section id="habilidades" title="Habilidades" icon={<SkillsIcon/>}>
+          <div className={styles.skillsContainer}>
+            <div className={styles.skillsAnimate} data-reverse={false}>
+              {
+                skills.map((skill, index) => (
+                  <div className={styles.skills}>
+                    <skill.Icon key={index}/>
+                    <p>{skill.name}</p>
+                  </div>
+                ))
+              }
+            </div>
+            <div className={styles.skillsAnimate} data-reverse={true}>
+              {
+                skills.map((skill, index) => (
+                  <div className={styles.skills}>
+                    <skill.Icon key={index}/>
+                    <p>{skill.name}</p>
+                  </div>
+                ))
+              }
+            </div>
+            <div className={styles.rightShadow}></div>
+            <div className={styles.leftShadow}></div>
+          </div>
+        </Section>
+
+        <Section id="contacto" title="Contáctame" icon={<ContactIcon/>}>
+          <section className={styles.contact}>
+            <div>
+              <h3 className={styles.title}>Colaboremos para <span>crear</span> algo excepcional</h3>
+              <p className={styles.message}>
+                Si buscas un profesional dedicado y apasionado para concretar tus ideas, estoy disponible para discutir
+                proyectos e innovaciones. Contáctame y juntos transformaremos tus visiones en realidades exitosas.
+              </p>
+            </div>
+            <form className={styles.form}>
+              <Input type="text" name="fullname" placeholder="Nombre completo"/>
+              <Input type="email" name="email" placeholder="Correo"/>
+              <textarea rows={8} placeholder="Descripción"/>
+              <button type="submit" disabled title="En desarrollo...">En desarrollo...</button>
+            </form>
+          </section>
+        </Section>
+
       </main>
+      <footer className={styles.footer}>
+        <p>Fabian Yate Ramirez - Florencia, Colombia - 2023</p>
+      </footer>
     </>
   )
 }

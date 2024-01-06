@@ -1,0 +1,15 @@
+.input {
+    width: 100%;
+    padding: 20px 10px;
+    border: 1px solid #ffffff80;
+    background-color: #000;
+    outline: none;
+    transition: border ease-in-out .3s;
+    color: #fff;
+}
+
+.input:focus,
+.input:hover
+{
+    border: 1px solid #fff;
+}

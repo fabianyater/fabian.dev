@@ -1,13 +1,22 @@
 import {
-  CodeIcon,
-  CSSIcon, DockerIcon,
-  GitHubIcon,
-  HtmlIcon, JavaIcon, JavaScriptIcon, JwtIcon,
+  CodeIcon, ContactIcon,
+  CSSIcon,
+  DockerIcon,
+  GitHubIcon, GitIcon,
+  HtmlIcon,
+  JavaIcon,
+  JavaScriptIcon,
+  JwtIcon,
   LinkedInIcon,
-  NextJsIcon,
-  ReactIcon, ReactQueryIcon, SpringIcon,
+  ReactIcon,
+  ReactQueryIcon,
+  SpringIcon,
   TailwindIcon
 } from "@/assets/icons";
+
+import PostgreSqlIcon from '@/assets/icons/postgresql.svg'
+import IntellijIcon from '@/assets/icons/intellijidea.svg'
+
 
 export const links = [
   {
@@ -47,6 +56,11 @@ export const socialLinks = [
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/fabianyr',
     Icon: LinkedInIcon
+  },
+  {
+    name: 'fabianyr.dev@gmail.com',
+    url: 'mailto:fabianyr.dev@gmail.com',
+    Icon: ContactIcon
   }
 ]
 
@@ -332,5 +346,48 @@ export const projects = [
       },
     ],
     cardColor: "#ab2461"
+  },
+]
+
+export const skills = [
+  {
+    name: 'Java',
+    Icon: JavaIcon
+  },
+  {
+    name: 'Spring',
+    Icon: SpringIcon
+  },
+  {
+    name: 'Docker',
+    Icon: DockerIcon
+  },
+  {
+    name: 'Jwt',
+    Icon: JwtIcon
+  },
+  {
+    name: 'ReactJs',
+    Icon: ReactIcon
+  },
+  {
+    name: 'CSS',
+    Icon: CSSIcon
+  },
+  {
+    name: 'HTML',
+    Icon: HtmlIcon
+  },
+  {
+    name: 'JavaScript',
+    Icon: JavaScriptIcon
+  },
+  {
+    name: 'React Query',
+    Icon: ReactQueryIcon
+  },
+  {
+    name: 'Tailwind',
+    Icon: TailwindIcon
   },
 ]
