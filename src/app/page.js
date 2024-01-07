@@ -74,13 +74,14 @@ export default function Home() {
             </div>
             <div className={styles.skillsAnimate} data-reverse={true}>
               {
-                skills.map((skill, index) => (
-                  <div key={index} className={styles.skills}>
-                    <skill.Icon />
-                    <p>{skill.name}</p>
-                  </div>
-                ))
-              }
+  skills.slice().reverse().map((skill, index) => (
+    <div key={index} className={styles.skills}>
+      <skill.Icon />
+      <p>{skill.name}</p>
+    </div>
+  ))
+}
+
             </div>
             <div className={styles.rightShadow}></div>
             <div className={styles.leftShadow}></div>
