@@ -1,16 +1,19 @@
-import styles from './styles.module.css'
+import styles from "./styles.module.css";
 import Pill from "@/app/components/Pill";
 
-const Card = ({project}) => {
-  const {title, description, tools, links, cardColor} = project;
+const Card = ({ project }) => {
+  const { title, description, tools, links, cardColor } = project;
 
   return (
-    <article className={styles.bemtoItem} style={{backgroundColor: cardColor}}>
+    <article
+      className={styles.bemtoItem}
+      style={{ backgroundColor: cardColor }}
+    >
       <div className={styles.cardContainer}>
         <header className={styles.tools}>
           {tools.map((tool, index) => (
             <div key={index} title={tool.name}>
-              <tool.Icon/>
+              <tool.Icon />
             </div>
           ))}
         </header>
@@ -19,15 +22,24 @@ const Card = ({project}) => {
           <p>{description}</p>
         </section>
         <footer className={styles.footer}>
-          {links.map((link, index) => (
-            link.url && (<a key={index} href={link.url} title={link.title} target="_blank">
-              <link.Icon/>
-            </a>)
-          ))}
+          {links.map(
+            (link, index) =>
+              link.url && (
+                <a
+                  key={index}
+                  href={link.url}
+                  title={link.title}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <link.Icon />
+                </a>
+              )
+          )}
         </footer>
       </div>
     </article>
-  )
-}
+  );
+};
 
 export default Card;

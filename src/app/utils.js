@@ -2,6 +2,7 @@ import {
   CodeIcon, ContactIcon,
   CSSIcon,
   DockerIcon,
+  DocumentIcon,
   GitHubIcon, GitIcon,
   HtmlIcon,
   JavaIcon,
@@ -61,7 +62,12 @@ export const socialLinks = [
     name: 'fabianyr.dev@gmail.com',
     url: 'mailto:fabianyr.dev@gmail.com',
     Icon: ContactIcon
-  }
+  },
+  {
+    name: 'CV',
+    url: 'https://fabian_150299.hackerresume.io/f550cd0a-ad54-4eb6-9122-3fc528525f49',
+    Icon: DocumentIcon
+  },
 ]
 
 export const workExperiences = [
