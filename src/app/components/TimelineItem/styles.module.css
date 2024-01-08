@@ -38,3 +38,15 @@
     color: rgb(195, 196, 199);
     text-wrap: balance;
 }
+
+.tasksList {
+    margin-left: 20px;
+}
+
+.tasksList li {
+    list-style: disc;
+}
+
+.tasksList li p span {
+    color: #f1dd4a;
+}
