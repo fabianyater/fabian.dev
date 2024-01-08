@@ -22,7 +22,7 @@ export default function Home() {
       <main className={styles.main}>
         <section id="sobremi" className={styles.aboutSection}>
           <header>
-            <Image className={styles.image} src={picture} alt="Foto de Fabian Yate"/>
+            <Image className={styles.image} src={picture} alt="Foto de Fabian Yate" loading="eager"/>
             <h1 className={styles.name}>Hola, soy Fabian Yate</h1>
           </header>
           <p className={styles.description}>
