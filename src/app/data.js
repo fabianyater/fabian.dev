@@ -3,21 +3,19 @@ import {
   CSSIcon,
   DockerIcon,
   DocumentIcon,
-  GitHubIcon, GitIcon,
+  GitHubIcon,
   HtmlIcon,
   JavaIcon,
   JavaScriptIcon,
   JwtIcon,
   LinkedInIcon,
+  PostgreSQLIcon,
+  PostmanIcon,
   ReactIcon,
   ReactQueryIcon,
   SpringIcon,
   TailwindIcon
 } from "@/assets/icons";
-
-import PostgreSqlIcon from '@/assets/icons/postgresql.svg'
-import IntellijIcon from '@/assets/icons/intellijidea.svg'
-
 
 export const links = [
   {
@@ -372,23 +370,7 @@ export const projects = [
   },
 ]
 
-export const skills = [
-  {
-    name: 'Java',
-    Icon: JavaIcon
-  },
-  {
-    name: 'Spring',
-    Icon: SpringIcon
-  },
-  {
-    name: 'Docker',
-    Icon: DockerIcon
-  },
-  {
-    name: 'Jwt',
-    Icon: JwtIcon
-  },
+export const frontendSkills = [
   {
     name: 'ReactJs',
     Icon: ReactIcon
@@ -413,4 +395,31 @@ export const skills = [
     name: 'Tailwind',
     Icon: TailwindIcon
   },
+]
+
+export const backendSkills = [
+  {
+    name: 'Java',
+    Icon: JavaIcon
+  },
+  {
+    name: 'Spring',
+    Icon: SpringIcon
+  },
+  {
+    name: 'Docker',
+    Icon: DockerIcon
+  },
+  {
+    name: 'Jwt',
+    Icon: JwtIcon
+  },
+  {
+    name: 'PostgresSQL',
+    Icon: PostgreSQLIcon
+  },
+  {
+    name: 'Postman',
+    Icon: PostmanIcon
+  }
 ]
