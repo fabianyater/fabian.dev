@@ -70,6 +70,12 @@
     width: 100%;
 }
 
-.footer a {
+.footer a{
     color: #fff;
+}
+
+.title {
+    color: #000;
+    font-size: 0.775rem;
+    font-weight: 500;
 }
