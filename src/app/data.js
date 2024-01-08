@@ -328,7 +328,7 @@ export const projects = [
         name: "Ver",
         Icon: CodeIcon,
         url: null,
-        title: 'Ver despliegue'
+        title: 'Vista previa pronto...'
       },
     ],
     cardColor: "#0BD08A"
@@ -365,7 +365,7 @@ export const projects = [
         name: "Ver",
         Icon: CodeIcon,
         url: null,
-        title: 'Ver despliegue'
+        title: ''
       },
     ],
     cardColor: "#e7c12b"
