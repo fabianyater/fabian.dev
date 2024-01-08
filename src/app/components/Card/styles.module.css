@@ -60,6 +60,7 @@
     font-weight: 300;
     font-size: 0.875rem;
     color: #000;
+    text-wrap: balance;
 }
 
 .footer {
