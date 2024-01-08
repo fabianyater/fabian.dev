@@ -1,7 +1,7 @@
 'use client'
 
 import styles from './styles.module.css'
-import {links} from "@/app/utils";
+import {links} from "@/app/data";
 import NavLink from "@/app/components/NavLink";
 import {useState} from "react";
 
