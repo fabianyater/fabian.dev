@@ -72,20 +72,37 @@ export const socialLinks = [
 
 export const workExperiences = [
   {
-    date: 'Julio 2023 - Actualidad',
-    title: 'Descanso profesional',
-    description: 'During my tenure at Sophos Solutions, I collaborated with Backbase, one of Sophos\'s international\n' +
-      ' partners. My primary assignment involved WSECU (Washington State Employees Credit Union),\n' +
-      ' providing me with a practical introduction to the nancial services sector and a chance to contribute to\n' +
-      ' the partnership\'s goals.'
+    date: 'Julio 2023 - Diciembre 2023 (5 meses)',
+    title: 'Proyecto Personal y Desarrollo Profesional Independiente',
+    description: 'Durante este periodo de descanso profesional, he enfocado mi tiempo en el desarrollo personal y en la' +
+      ' ejecución de diversos proyectos independientes. Durante este tiempo, he dedicado esfuerzos significativos a ' +
+      'trabajar en mí mismo y en iniciativas personales. Esto incluye la realización de proyectos autónomos, ' +
+      'el fortalecimiento de habilidades técnicas y la exploración de nuevas oportunidades en el ámbito profesional. ' +
+      '\n Aunque no estuve vinculado formalmente a ninguna compañ+ia, este período me brindó la oportunidad de cultivar ' +
+      'habilidades y conocimientos valiosos a través de experiencias autodirigidas.',
+    tasks: []
   },
   {
-    date: 'Enero 2022 - Julio 2023',
+    date: 'Enero 2022 - Julio 2023 (1 año y 7 meses)',
     title: 'Engineer Trainee II - Sophos Solutions',
-    description: 'During my tenure at Sophos Solutions, I collaborated with Backbase, one of Sophos\'s international\n' +
-      ' partners. My primary assignment involved WSECU (Washington State Employees Credit Union),\n' +
-      ' providing me with a practical introduction to the nancial services sector and a chance to contribute to\n' +
-      ' the partnership\'s goals.'
+    description: 'Durante mi estancia en Sophos Solutions, colaboré con Backbase, uno de los socios internacionales ' +
+      'de Sophos. Mi principal tarea fue con WSECU (Washington State Employees Credit Union), lo que me proporcionó ' +
+      'una introducción práctica al sector de los servicios financieros y la oportunidad de contribuir a los objetivos ' +
+      'de la asociación.',
+    tasks: [
+      {
+        item: 'Migración: Contribuí a actualizar la tecnología de WSECU mediante la migración de código antiguo a una ' +
+          'nueva aplicación, lo que ayudó a mejorar la eficiencia y escalabilidad del sistema.'
+      },
+      {
+        item: 'Pruebas: Participé en el desarrollo y la realización de pruebas unitarias y de integración, que ayudaron' +
+          ' a reducir errores y problemas de compatibilidad en nuestro software.'
+      },
+      {
+        item: 'Desarrollo de funciones: Desempeñé un papel en el desarrollo e implementación de nuevas características ' +
+          'para la aplicación WSECU, mejorando la experiencia del usuario y ampliando las funcionalidades del sistema.'
+      }
+    ]
   }
 ]
 
@@ -236,7 +253,7 @@ export const projects = [
         title: 'Ver despliegue'
       },
     ],
-    cardColor: "#4f4fe5"
+    cardColor: "#8787fa"
   },
   {
     title: 'Compresor de imágenes',
@@ -351,7 +368,7 @@ export const projects = [
         title: 'Ver despliegue'
       },
     ],
-    cardColor: "#ab2461"
+    cardColor: "#e7c12b"
   },
 ]
 
