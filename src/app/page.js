@@ -1,5 +1,3 @@
-'use client'
-
 import Header from '@/app/components/Header'
 import styles from './page.module.css'
 import picture from '../assets/fabian.webp'
