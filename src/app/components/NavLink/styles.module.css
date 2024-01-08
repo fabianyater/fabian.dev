@@ -9,7 +9,8 @@
     transition: all ease-out 0.3s;
 }
 
-.link:hover {
+.link:hover,
+.linkSelected{
     border: 2px solid #fff;
     color: #fff;
     transition: all ease-in 0.3s;
