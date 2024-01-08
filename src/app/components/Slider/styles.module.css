@@ -1,0 +1,110 @@
+.skillsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skillsAnimate {
+  display: flex;
+  gap: 20px;
+}
+
+.skillsAnimate[data-reverse="false"] {
+  animation: scrolling 20s linear infinite;
+}
+
+.skillsAnimate[data-reverse="true"] {
+  animation: reverseScrolling 20s linear infinite;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-shrink: 0;
+  width: 240px;
+  padding: 40px 25px;
+  background-color: rgba(30, 41, 59, 0.5);
+  border-radius: 0.75rem;
+}
+
+.skills:hover {
+  background-color: rgba(30, 41, 59, 0.75);
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.skills p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-wrap: wrap;
+}
+
+.skills svg {
+  width: 32px;
+  height: 32px;
+}
+
+.rightShadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10rem;
+  pointer-events: none;
+  background-image: linear-gradient(to right, #000, transparent);
+}
+
+.leftShadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 33.333333%;
+  pointer-events: none;
+  background-image: linear-gradient(to left, #000, transparent);
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+@keyframes reverseScrolling {
+  100% {
+    transform: translateX(0%);
+  }
+
+  0% {
+    transform: translateX(-50%);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .skills {
+    justify-content: center;
+    width: 160px;
+    padding: 10px 20px;
+  }
+
+  .skills svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .skills p {
+    font-size: 1rem;
+  }
+}
