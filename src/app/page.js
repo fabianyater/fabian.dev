@@ -4,7 +4,7 @@ import Header from '@/app/components/Header'
 import styles from './page.module.css'
 import picture from '../assets/fabian.webp'
 import Image from "next/image";
-import {projects, skills, socialLinks, workExperiences} from "@/app/utils";
+import {projects, skills, socialLinks, workExperiences} from "@/app/data";
 import Pill from "@/app/components/Pill";
 import Section from "@/app/components/Section";
 import {CodeIcon, ContactIcon, SkillsIcon, SuiteCaseIcon} from "@/assets/icons";
