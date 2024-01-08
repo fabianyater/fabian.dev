@@ -1,22 +1,7 @@
 import styles from './styles.module.css'
+import {getTaskDescription, getTaskTitle, splitItem} from "@/app/utils";
 
 const TimelineItem = ({date, title, description, tasks}) => {
-  const splitItem = (item) => {
-    return item.split(':');
-  }
-
-  const getTaskTitle = (itemParts) => {
-    return itemParts[0];
-  }
-
-  const getTaskDescription = (itemParts) => {
-    if (itemParts.length > 1) {
-      itemParts.shift();
-      return itemParts.join(':').trim();
-    }
-    return itemParts.join(':');
-  }
-
   return (
     <li className={styles.listItem}>
       <div></div>
