@@ -4,10 +4,10 @@
     justify-content: center;
     gap: 5px;
     padding: .5rem 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid rgba(var(--border-color), 0.72);
     border-radius: 9999px;
-    background-color: #ffffff3d;
-    color: #ffffff90;
+    background-color: var(--background-color);
+    color: var(--text-color);
     text-decoration: none;
 
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -21,6 +21,6 @@
 }
 
 .socialLink:hover {
-    color: #ffffff;
+    color: var(--text-color);
     transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1.1) scaleY(1.1);
 }

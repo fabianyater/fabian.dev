@@ -6,7 +6,7 @@
     height: 60px;
     padding: 10px 25px;
     border-radius: 10px;
-    background: #100D0D7F;
+    background-color: var(--header-background-color);
     max-width: 720px;
     margin: 20px auto 0;
     position: sticky;

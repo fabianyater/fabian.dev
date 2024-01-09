@@ -1,7 +1,9 @@
 import styles from "./styles.module.css";
 import Pill from "@/app/components/Pill";
+import {useTheme} from "@/app/context/ThemeProvider";
 
 const Card = ({project}) => {
+  const { theme } = useTheme();
   const {title, description, tools, links, cardColor} = project;
 
   return (
@@ -10,7 +12,7 @@ const Card = ({project}) => {
       style={{backgroundColor: cardColor}}
     >
       <div className={styles.cardContainer}>
-        <header className={styles.tools}>
+        <header className={styles.tools} data-theme={theme}>
           {tools.map((tool, index) => (
             <div key={index} title={tool.name}>
               <tool.Icon/>
@@ -21,7 +23,7 @@ const Card = ({project}) => {
           <h3>{title}</h3>
           <p>{description}</p>
         </section>
-        <footer className={styles.footer}>
+        <footer className={styles.footer} data-theme={theme}>
           {links.map(
             (link, index) =>
               link.url ? (

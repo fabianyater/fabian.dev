@@ -366,7 +366,7 @@ export const projects = [
         title: ''
       },
     ],
-    cardColor: "#e7c12b"
+    cardColor: "#17bfce"
   },
 ]
 

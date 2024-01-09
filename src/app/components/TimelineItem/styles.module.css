@@ -20,22 +20,22 @@
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: 400;
-    color: rgb(115, 162, 243);
+    color: var(--date-color);
 }
 
 .listItem h3 {
     font-size: 1.125rem;
     line-height: 1.75rem;
     font-weight: 600;
-    color: #f1dd4a;
+    color: var(--title-color);
 }
 
 .listItem p {
     margin-bottom: 1rem;
     font-size: 0.875rem;
     line-height: 1.5rem;
-    font-weight: 400;
-    color: rgb(195, 196, 199);
+    font-weight: 300;
+    color: var(--text-color);
     text-wrap: balance;
 }
 
@@ -48,5 +48,6 @@
 }
 
 .tasksList li p span {
-    color: #f1dd4a;
+    font-weight: 400;
+    color: var(--title-color);
 }

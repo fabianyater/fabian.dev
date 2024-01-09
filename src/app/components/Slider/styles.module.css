@@ -28,12 +28,13 @@
   flex-shrink: 0;
   width: 240px;
   padding: 40px 25px;
-  background-color: rgba(30, 41, 59, 0.5);
+  background-color: var(--card-background-color);
   border-radius: 0.75rem;
+  transition: all ease-in-out 0.3s;
 }
 
 .skills:hover {
-  background-color: rgba(30, 41, 59, 0.75);
+  background-color: var(--card-hover-background-color);
   cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
@@ -42,11 +43,17 @@
   font-size: 1.5rem;
   font-weight: 600;
   text-wrap: wrap;
+  color: var(--text-color)
 }
 
 .skills svg {
   width: 32px;
   height: 32px;
+  color: #fff;
+}
+
+.skills[data-theme="light"] svg{
+  filter: invert();
 }
 
 @keyframes scrolling {

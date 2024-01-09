@@ -17,5 +17,14 @@
 }
 
 .header h2 {
-    font-weight: 500;;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.header svg {
+    color: #fff;
+}
+
+.header[data-theme="light"] svg {
+    filter: invert();
 }
