@@ -63,6 +63,8 @@ export default function Home() {
           <div className={styles.skillsContainer}>
             <Slider data={[...frontendSkills, ...frontendSkills]} reverse={false} />
             <Slider data={[...backendSkills, ...backendSkills]} reverse />
+            <div className={styles.rightShadow}></div>
+            <div className={styles.leftShadow}></div>
           </div>
         </Section>
 

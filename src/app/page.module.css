@@ -214,6 +214,26 @@
   font-size: 0.875rem;
 }
 
+.rightShadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10rem;
+  pointer-events: none;
+  background-image: linear-gradient(to right, #000, transparent);
+}
+
+.leftShadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 33.333333%;
+  pointer-events: none;
+  background-image: linear-gradient(to left, #000, transparent);
+}
+
 @media (max-width: 1000px) {
   .bemto {
     display: flex;

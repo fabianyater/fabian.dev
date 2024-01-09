@@ -11,8 +11,6 @@ const Slider = ({ data, reverse }) => {
           </div>
         ))}
       </div>
-      <div className={styles.rightShadow}></div>
-      <div className={styles.leftShadow}></div>
     </>
   );
 };
