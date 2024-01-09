@@ -99,7 +99,7 @@ export default function Home() {
               <Input type="text" name="fullname" placeholder="Nombre completo"/>
               <Input type="email" name="email" placeholder="Correo"/>
               <textarea rows={8} name="message" placeholder="Descripción"/>
-              <button type="submit" title="En desarrollo...">Enviar</button>
+              <button type="submit" title="En desarrollo..." disabled>En desarrollo...</button>
             </form>
           </section>
         </Section>
