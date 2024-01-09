@@ -132,11 +132,11 @@
 }
 
 .bemto article:nth-child(3) {
-  grid-area: 3 / 2 / 4 / 3;
+  grid-area: 3 / 2 / 4 / 4;
 }
 
 .bemto article:nth-child(4) {
-  grid-area: 3 / 3 / 4 / 4;
+  grid-area: 4 / 4 / 2 / 4;
 }
 
 .bemto article:nth-child(5) {

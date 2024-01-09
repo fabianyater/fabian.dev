@@ -1,20 +1,20 @@
 'use client'
 
-import Card from "@/app/components/Card";
-import Header from '@/app/components/Header';
-import Input from "@/app/components/Input";
-import Pill from "@/app/components/Pill";
-import Section from "@/app/components/Section";
-import Timeline from "@/app/components/Timeline";
-import {backendSkills, frontendSkills, projects, socialLinks, workExperiences} from "@/app/data";
-import {CodeIcon, ContactIcon, SkillsIcon, SuiteCaseIcon} from "@/assets/icons";
-import Image from "next/image";
-import picture from '../assets/fabian.webp';
-import styles from './page.module.css';
-import Slider from "./components/Slider";
 import {useTheme} from "@/app/context/ThemeProvider";
 import {useEffect} from "react";
-import Toggle from "@/app/components/Toggle";
+import Toggle from "@/components/Toggle";
+import Header from "@/components/Header";
+import Image from "next/image";
+import Pill from "@/components/Pill";
+import {backendSkills, frontendSkills, projects, socialLinks, workExperiences} from "@/app/data";
+import Section from "@/components/Section";
+import {CodeIcon, ContactIcon, SkillsIcon, SuiteCaseIcon} from "@/assets/icons";
+import Timeline from "@/components/Timeline";
+import Card from "@/components/Card";
+import Slider from "@/components/Slider";
+import Input from "@/components/Input";
+import styles from './page.module.css';
+import picture from '../assets/fabian.webp';
 
 export default function Home() {
   const {theme} = useTheme();
@@ -33,9 +33,9 @@ export default function Home() {
         </div>
       }
       <div className={styles.togglePosition}>
-        <Toggle/>
+        <Toggle />
       </div>
-      <Header/>
+      <Header />
       <main className={styles.main}>
         <section id="sobremi" className={styles.aboutSection}>
           <header>
@@ -61,11 +61,11 @@ export default function Home() {
           </div>
         </section>
 
-        <Section id="experiencia" title="Experiencia Laboral" icon={<SuiteCaseIcon/>}>
+        <Section id="experiencia" title="Experiencia Laboral" icon={<SuiteCaseIcon />}>
           <Timeline items={workExperiences}/>
         </Section>
 
-        <Section id="proyectos" title="Proyectos" icon={<CodeIcon/>}>
+        <Section id="proyectos" title="Proyectos" icon={<CodeIcon />}>
           <div className={styles.bemto}>
             {
               projects.map((project, index) => (
@@ -77,7 +77,7 @@ export default function Home() {
              style={{width: '120px', margin: '0 auto', marginTop: '40px'}}>Ver más</a>
         </Section>
 
-        <Section id="habilidades" title="Habilidades" icon={<SkillsIcon/>}>
+        <Section id="habilidades" title="Habilidades" icon={<SkillsIcon />}>
           <div className={styles.skillsContainer}>
             <Slider data={[...frontendSkills, ...frontendSkills]} reverse={false}/>
             <Slider data={[...backendSkills, ...backendSkills]} reverse/>
@@ -86,7 +86,7 @@ export default function Home() {
           </div>
         </Section>
 
-        <Section id="contacto" title="Contáctame" icon={<ContactIcon/>}>
+        <Section id="contacto" title="Contáctame" icon={<ContactIcon />}>
           <section className={styles.contact}>
             <div>
               <h3 className={styles.title}>Colaboremos para <span data-theme={theme}>crear</span> algo excepcional</h3>
@@ -98,8 +98,8 @@ export default function Home() {
             <form className={styles.form}>
               <Input type="text" name="fullname" placeholder="Nombre completo"/>
               <Input type="email" name="email" placeholder="Correo"/>
-              <textarea rows={8} placeholder="Descripción"/>
-              <button type="submit" disabled title="En desarrollo...">En desarrollo...</button>
+              <textarea rows={8} name="message" placeholder="Descripción"/>
+              <button type="submit" title="En desarrollo...">Enviar</button>
             </form>
           </section>
         </Section>

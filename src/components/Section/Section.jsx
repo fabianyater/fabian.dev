@@ -1,6 +1,5 @@
-import styles from "@/app/components/Section/styles.module.css"
 import {useTheme} from "@/app/context/ThemeProvider";
-
+import styles from './styles.module.css'
 const Section = ({id, title, icon, children}) => {
   const { theme } = useTheme()
 

@@ -142,7 +142,7 @@ export const projects = [
     ],
     cardColor: "#989dcc"
   },
-  {
+  /*{
     title: "Linktree Clone",
     description: "Un clon del popular sitio web linktree.",
     tools: [
@@ -178,7 +178,7 @@ export const projects = [
       },
     ],
     cardColor: "#119673"
-  },
+  },*/
   {
     title: 'Aplicación del clima',
     description: 'Aplicación del clima para la Hackaton de @midudev',

@@ -1,5 +1,4 @@
 import styles from "./styles.module.css";
-import Pill from "@/app/components/Pill";
 import {useTheme} from "@/app/context/ThemeProvider";
 
 const Card = ({project}) => {
@@ -37,7 +36,7 @@ const Card = ({project}) => {
                   <link.Icon/>
                 </a>
               ) : link.title && (
-                <p className={styles.title}>
+                <p key={index} className={styles.title}>
                   {link.title}
                 </p>
               )
