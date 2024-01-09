@@ -36,7 +36,7 @@
 .burger div {
     width: 2rem;
     height: 0.2rem;
-    background-color: #fff;
+    background-color: var(--text-color);
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -67,7 +67,7 @@
     left: 0px;
     right: 0px;
     border-radius: 0 0 10px 10px;
-    background: #100D0D;;
+    background: var(--background-color);
     padding: 20px 0;
 }
 

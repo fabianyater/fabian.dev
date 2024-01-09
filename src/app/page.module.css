@@ -343,4 +343,11 @@
   .socialLinksContainer {
     flex-wrap: wrap;
   }
+
+  .togglePosition{
+    z-index: 10;
+    left: 20px;
+    top: 17px;
+    width: max-content;
+  }
 }
