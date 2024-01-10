@@ -89,16 +89,19 @@ export const workExperiences = [
       'de la asociación.',
     tasks: [
       {
-        item: 'Migración: Contribuí a actualizar la tecnología de WSECU mediante la migración de código antiguo a una ' +
-          'nueva aplicación, lo que ayudó a mejorar la eficiencia y escalabilidad del sistema.'
+        item: 'Migración',
+        description: ' Contribuí a actualizar la tecnología de WSECU mediante la migración de código antiguo a una ' +
+        'nueva aplicación, lo que ayudó a mejorar la eficiencia y escalabilidad del sistema.'
       },
       {
-        item: 'Pruebas: Participé en el desarrollo y la realización de pruebas unitarias y de integración, que ayudaron' +
-          ' a reducir errores y problemas de compatibilidad en nuestro software.'
+        item: 'Pruebas',
+        description: 'Participé en el desarrollo y la realización de pruebas unitarias y de integración, que ayudaron' +
+        ' a reducir errores y problemas de compatibilidad en nuestro software.'
       },
       {
-        item: 'Desarrollo de funciones: Desempeñé un papel en el desarrollo e implementación de nuevas características ' +
-          'para la aplicación WSECU, mejorando la experiencia del usuario y ampliando las funcionalidades del sistema.'
+        item: 'Desarrollo de funciones',
+        description: 'Desempeñé un papel en el desarrollo e implementación de nuevas características ' +
+        'para la aplicación WSECU, mejorando la experiencia del usuario y ampliando las funcionalidades del sistema.'
       }
     ]
   }

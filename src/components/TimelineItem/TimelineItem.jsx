@@ -1,5 +1,4 @@
-import styles from './styles.module.css'
-import {getTaskDescription, getTaskTitle, splitItem} from "@/app/utils";
+import styles from './styles.module.css';
 
 const TimelineItem = ({date, title, description, tasks}) => {
   return (
@@ -10,10 +9,9 @@ const TimelineItem = ({date, title, description, tasks}) => {
       <p>{description}</p>
       <ul className={styles.tasksList}>
         {tasks.map((task, index) => {
-          const taskParts = splitItem(task.item);
           return(
             <li key={index}>
-              <p><span>{getTaskTitle(taskParts)}: </span>{getTaskDescription(taskParts)}</p>
+              <p><span>{task.item}: </span>{task.description}</p>
             </li>
           );
         })}
