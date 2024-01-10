@@ -91,17 +91,17 @@ export const workExperiences = [
       {
         item: 'Migración',
         description: ' Contribuí a actualizar la tecnología de WSECU mediante la migración de código antiguo a una ' +
-        'nueva aplicación, lo que ayudó a mejorar la eficiencia y escalabilidad del sistema.'
+          'nueva aplicación, lo que ayudó a mejorar la eficiencia y escalabilidad del sistema.'
       },
       {
         item: 'Pruebas',
         description: 'Participé en el desarrollo y la realización de pruebas unitarias y de integración, que ayudaron' +
-        ' a reducir errores y problemas de compatibilidad en nuestro software.'
+          ' a reducir errores y problemas de compatibilidad en nuestro software.'
       },
       {
         item: 'Desarrollo de funciones',
         description: 'Desempeñé un papel en el desarrollo e implementación de nuevas características ' +
-        'para la aplicación WSECU, mejorando la experiencia del usuario y ampliando las funcionalidades del sistema.'
+          'para la aplicación WSECU, mejorando la experiencia del usuario y ampliando las funcionalidades del sistema.'
       }
     ]
   }
@@ -373,56 +373,57 @@ export const projects = [
   },
 ]
 
-export const frontendSkills = [
-  {
-    name: 'ReactJs',
-    Icon: ReactIcon
-  },
-  {
-    name: 'CSS',
-    Icon: CSSIcon
-  },
-  {
-    name: 'HTML',
-    Icon: HtmlIcon
-  },
-  {
-    name: 'JavaScript',
-    Icon: JavaScriptIcon
-  },
-  {
-    name: 'React Query',
-    Icon: ReactQueryIcon
-  },
-  {
-    name: 'Tailwind',
-    Icon: TailwindIcon
-  },
-]
-
-export const backendSkills = [
-  {
-    name: 'Java',
-    Icon: JavaIcon
-  },
-  {
-    name: 'Spring',
-    Icon: SpringIcon
-  },
-  {
-    name: 'Docker',
-    Icon: DockerIcon
-  },
-  {
-    name: 'Jwt',
-    Icon: JwtIcon
-  },
-  {
-    name: 'PostgresSQL',
-    Icon: PostgreSQLIcon
-  },
-  {
-    name: 'Postman',
-    Icon: PostmanIcon
-  }
-]
+export const skills = {
+  frontendSkills: [
+    {
+      name: 'ReactJs',
+      Icon: ReactIcon
+    },
+    {
+      name: 'CSS',
+      Icon: CSSIcon
+    },
+    {
+      name: 'HTML',
+      Icon: HtmlIcon
+    },
+    {
+      name: 'JavaScript',
+      Icon: JavaScriptIcon
+    },
+    {
+      name: 'React Query',
+      Icon: ReactQueryIcon
+    },
+    {
+      name: 'Tailwind',
+      Icon: TailwindIcon
+    },
+  ],
+  backendSkills: [
+    {
+      name: 'Java',
+      Icon: JavaIcon
+    },
+    {
+      name: 'Spring',
+      Icon: SpringIcon
+    },
+    {
+      name: 'Docker',
+      Icon: DockerIcon
+    },
+    {
+      name: 'Jwt',
+      Icon: JwtIcon
+    },
+    {
+      name: 'PostgresSQL',
+      Icon: PostgreSQLIcon
+    },
+    {
+      name: 'Postman',
+      Icon: PostmanIcon
+    }
+  ]
+}

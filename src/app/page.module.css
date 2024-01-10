@@ -41,9 +41,15 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  gap: 10px;
   position: fixed;
   top: 35px;
   right: 20px;
+}
+
+.language {
+  color: var(--text-color);
+  cursor: pointer;
 }
 
 .main {

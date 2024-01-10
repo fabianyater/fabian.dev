@@ -1,22 +1,22 @@
 'use client'
 
-import {useTheme} from "@/app/context/ThemeProvider";
-import {useEffect} from "react";
-import Toggle from "@/components/Toggle";
-import Header from "@/components/Header";
-import Image from "next/image";
-import Pill from "@/components/Pill";
-import {backendSkills, frontendSkills, projects, socialLinks, workExperiences} from "@/app/data";
-import Section from "@/components/Section";
-import {CodeIcon, ContactIcon, SkillsIcon, SuiteCaseIcon} from "@/assets/icons";
-import Timeline from "@/components/Timeline";
+import { useTheme } from "@/app/context/ThemeProvider";
+import { projects, skills, socialLinks, workExperiences } from "@/app/data";
+import { CodeIcon, ContactIcon, SkillsIcon, SuiteCaseIcon } from "@/assets/icons";
 import Card from "@/components/Card";
-import Slider from "@/components/Slider";
+import Header from "@/components/Header";
 import Input from "@/components/Input";
-import styles from './page.module.css';
+import Pill from "@/components/Pill";
+import Section from "@/components/Section";
+import Slider from "@/components/Slider";
+import Timeline from "@/components/Timeline";
+import Toggle from "@/components/Toggle";
+import Image from "next/image";
+import { useEffect } from "react";
 import picture from '../assets/fabian.webp';
+import styles from './page.module.css';
 
-export default function Home() {
+function Home() {
   const {theme} = useTheme();
 
   useEffect(() => {
@@ -34,13 +34,14 @@ export default function Home() {
       }
       <div className={styles.togglePosition}>
         <Toggle />
+        <p className={styles.language}>EN</p>
       </div>
+
       <Header />
       <main className={styles.main}>
         <section id="sobremi" className={styles.aboutSection}>
           <header>
             <Image className={styles.image} src={picture} alt="Foto de Fabian Yate" loading="eager"/>
-            <h1 className={styles.name}>Hola, soy Fabian Yate</h1>
           </header>
           <p className={styles.description}>
             <span>Desarrollador Full-Stack</span> con +2 años de experiencia. Habilidades en <span>HTML, CSS, JavaScript y
@@ -79,8 +80,8 @@ export default function Home() {
 
         <Section id="habilidades" title="Habilidades" icon={<SkillsIcon />}>
           <div className={styles.skillsContainer}>
-            <Slider data={[...frontendSkills, ...frontendSkills]} reverse={false}/>
-            <Slider data={[...backendSkills, ...backendSkills]} reverse/>
+            <Slider data={[...skills.frontendSkills, ...skills.frontendSkills]} reverse={false}/>
+            <Slider data={[...skills.backendSkills, ...skills.backendSkills]} reverse/>
             <div className={styles.rightShadow}></div>
             <div className={styles.leftShadow}></div>
           </div>
@@ -111,3 +112,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home
