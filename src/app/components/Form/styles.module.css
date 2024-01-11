@@ -1,0 +1,36 @@
+.form {
+  max-width: 720px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form textarea {
+  width: 100%;
+  padding: 20px 10px;
+  border: 1px solid rgba(var(--border-color), 0.5);
+  background-color: var(--background-color);
+  outline: none;
+  transition: border ease-in-out 0.3s;
+  color: var(--text-color);
+}
+
+.form textarea:focus,
+.form textarea:hover {
+  border: 1px solid rgba(var(--border-color), 1);
+}
+
+.form button {
+  width: 100%;
+  padding: 15px 40px;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--background-color);
+  filter: invert();
+  border: none;
+  color: var(--text-color);
+}
