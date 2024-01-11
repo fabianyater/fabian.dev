@@ -60,13 +60,11 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   gap: 20px;
   /*padding: 10rem 0;*/
   max-width: 740px;
-  min-height: 100vh;
-  margin-top: -80px;
 }
 
 .aboutSection header {
