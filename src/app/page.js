@@ -14,7 +14,7 @@ import Section from "@/app/components/Section";
 import Timeline from "@/app/components/Timeline";
 import Card from "@/app/components/Card";
 import Slider from "@/app/components/Slider";
-import Input from "@/app/components/Input";
+import Form from "@/app/components/Form";
 
 function Home() {
   const {theme} = useTheme();
@@ -96,12 +96,7 @@ function Home() {
                 proyectos e innovaciones. Contáctame y juntos transformaremos tus visiones en realidades exitosas.
               </p>
             </div>
-            <form className={styles.form}>
-              <Input type="text" name="fullname" placeholder="Nombre completo"/>
-              <Input type="email" name="email" placeholder="Correo"/>
-              <textarea rows={8} name="message" placeholder="Descripción"/>
-              <button type="submit" title="En desarrollo..." disabled>En desarrollo...</button>
-            </form>
+            <Form />
           </section>
         </Section>
 
