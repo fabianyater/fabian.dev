@@ -1,8 +1,9 @@
-import {Poppins} from 'next/font/google'
-import './globals.css'
-import {ThemeProvider} from "@/app/context/ThemeProvider";
+import { ThemeProvider } from "@/app/context/ThemeProvider";
+import { Poppins } from 'next/font/google';
+import { ActiveSectionProvider } from './context/ActiveSectionProvider';
+import './globals.css';
 
-const poppins = Poppins({subsets: ['latin'], weight: ["200", "300", "500", "600", "700"]})
+const poppins = Poppins({ subsets: ['latin'], weight: ["200", "300", "500", "600", "700"] })
 
 export const metadata = {
   title: 'Portafolio | Fabian Yate Ramirez',
@@ -11,14 +12,16 @@ export const metadata = {
     ' experiencias en el campo del desarrollo web.',
 }
 
-export default function RootLayout({children}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <body className={poppins.className}>
-    <ThemeProvider>
-      {children}
-    </ThemeProvider>
-    </body>
+      <body className={poppins.className}>
+        <ThemeProvider>
+          <ActiveSectionProvider>
+            {children}
+          </ActiveSectionProvider>
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
