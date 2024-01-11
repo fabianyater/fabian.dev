@@ -3,18 +3,18 @@
 import { useTheme } from "@/app/context/ThemeProvider";
 import { projects, skills, socialLinks, workExperiences } from "@/app/data";
 import { CodeIcon, ContactIcon, SkillsIcon, SuiteCaseIcon } from "@/assets/icons";
-import Card from "@/components/Card";
-import Header from "@/components/Header";
-import Input from "@/components/Input";
-import Pill from "@/components/Pill";
-import Section from "@/components/Section";
-import Slider from "@/components/Slider";
-import Timeline from "@/components/Timeline";
-import Toggle from "@/components/Toggle";
 import Image from "next/image";
 import { useEffect } from "react";
 import picture from '../assets/fabian.webp';
 import styles from './page.module.css';
+import Toggle from "@/app/components/Toggle";
+import Header from "@/app/components/Header";
+import Pill from "@/app/components/Pill";
+import Section from "@/app/components/Section";
+import Timeline from "@/app/components/Timeline";
+import Card from "@/app/components/Card";
+import Slider from "@/app/components/Slider";
+import Input from "@/app/components/Input";
 
 function Home() {
   const {theme} = useTheme();

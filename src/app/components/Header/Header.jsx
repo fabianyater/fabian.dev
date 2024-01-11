@@ -3,7 +3,7 @@
 import styles from './styles.module.css'
 import {links} from "@/app/data";
 import {useState} from "react";
-import NavLink from "@/components/NavLink";
+import NavLink from "@/app/components/NavLink";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

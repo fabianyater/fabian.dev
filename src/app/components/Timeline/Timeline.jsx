@@ -1,5 +1,5 @@
 import styles from './styles.module.css'
-import TimelineItem from "@/components/TimelineItem";
+import TimelineItem from "@/app/components/TimelineItem";
 
 const Section = ({items}) => {
   return (
