@@ -24,3 +24,14 @@
     color: var(--text-color);
     transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1.1) scaleY(1.1);
 }
+
+@media (max-width: 768px) {
+    .socialLink {
+        font-size: 0.775rem;
+    }
+
+    .socialLink svg {
+        width: 1rem;
+        height: 1rem;
+    }
+}
